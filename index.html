@@ -1,1 +1,228 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>The Riemann-Thomann Model | 黎曼-托曼模型</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: "Helvetica Neue", Arial, "PingFang SC", "Microsoft YaHei", sans-serif;
+    }
+    body {
+      background: #f9f9fb;
+      color: #333;
+      line-height: 1.6;
+    }
+    section {
+      min-height: 100vh;
+      padding: 60px 20px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      border-bottom: 1px solid #eee;
+    }
+    h1 {
+      font-size: 2.4rem;
+      margin-bottom: 12px;
+      color: #2c3e50;
+    }
+    h2 {
+      font-size: 1.8rem;
+      margin: 20px 0 30px;
+      color: #3498db;
+    }
+    p {
+      font-size: 1.2rem;
+      margin: 8px 0;
+      max-width: 800px;
+    }
+    .bilingual {
+      display: flex;
+      flex-direction: column;
+      gap: 4px;
+    }
+    .en { color: #555; font-weight: 500; }
+    .zh { color: #222; font-weight: 600; }
 
+    /* Quadrant Styles */
+    .quadrant-container {
+      width: 320px;
+      height: 320px;
+      position: relative;
+      margin: 30px auto;
+    }
+    .axis {
+      stroke: #999;
+      stroke-width: 2;
+    }
+    .label {
+      font-size: 14px;
+      fill: #333;
+      font-weight: bold;
+    }
+    .icon {
+      font-size: 28px;
+      position: absolute;
+    }
+    .top { top: 20px; left: 50%; transform: translateX(-50%); }
+    .bottom { bottom: 20px; left: 50%; transform: translateX(-50%); }
+    .left { left: 20px; top: 50%; transform: translateY(-50%); }
+    .right { right: 20px; top: 50%; transform: translateY(-50%); }
+
+    /* Styles for 4 styles */
+    .styles-grid {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 20px;
+      max-width: 600px;
+      margin: 30px auto;
+    }
+    .style-card {
+      background: white;
+      border-radius: 12px;
+      padding: 20px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+    }
+    .style-icon {
+      font-size: 36px;
+      margin-bottom: 12px;
+    }
+
+    footer {
+      text-align: center;
+      padding: 30px;
+      color: #7f8c8d;
+      font-style: italic;
+    }
+  </style>
+</head>
+<body>
+
+<!-- Slide 1: Cover -->
+<section>
+  <div class="bilingual">
+    <h1 class="en">The Riemann-Thomann Model</h1>
+    <h1 class="zh">黎曼-托曼模型</h1>
+  </div>
+  <div class="bilingual">
+    <p class="en">Understanding Leadership Through Four Basic Orientations</p>
+    <p class="zh">通过四种基本取向理解领导力</p>
+  </div>
+</section>
+
+<!-- Slide 2: Origin -->
+<section>
+  <h2>Origin / 起源</h2>
+  <p class="en">Developed by Christoph Thomann<br>based on Fritz Riemann’s personality theory</p>
+  <p class="zh">由克里斯托夫·托曼提出<br>基于弗里茨·黎曼的人格理论</p>
+</section>
+
+<!-- Slide 3: Four Orientations -->
+<section>
+  <h2>Four Basic Orientations / 四大基本取向</h2>
+  <div class="quadrant-container">
+    <svg viewBox="0 0 200 200" width="100%" height="100%">
+      <line x1="100" y1="0" x2="100" y2="200" class="axis"/>
+      <line x1="0" y1="100" x2="200" y2="100" class="axis"/>
+      <text x="100" y="20" text-anchor="middle" class="label">Change<br>变革 ⚡</text>
+      <text x="100" y="190" text-anchor="middle" class="label">Stability<br>稳定 ⚓</text>
+      <text x="20" y="105" text-anchor="start" class="label">Distance<br>距离 🏝️</text>
+      <text x="180" y="105" text-anchor="end" class="label">Proximity<br>亲近 ❤️</text>
+    </svg>
+  </div>
+</section>
+
+<!-- Slide 4: Four Leadership Styles -->
+<section>
+  <h2>Leadership Styles / 领导风格</h2>
+  <div class="styles-grid">
+    <div class="style-card">
+      <div class="style-icon">📅👥</div>
+      <div class="bilingual">
+        <p class="en"><strong>Organizer</strong></p>
+        <p class="zh"><strong>组织者</strong></p>
+      </div>
+      <p class="en">Stability + Proximity</p>
+      <p class="zh">稳定 + 亲近</p>
+    </div>
+    <div class="style-card">
+      <div class="style-icon">💡🤝</div>
+      <div class="bilingual">
+        <p class="en"><strong>Innovator</strong></p>
+        <p class="zh"><strong>创新者</strong></p>
+      </div>
+      <p class="en">Change + Proximity</p>
+      <p class="zh">变革 + 亲近</p>
+    </div>
+    <div class="style-card">
+      <div class="style-icon">🔍📊</div>
+      <div class="bilingual">
+        <p class="en"><strong>Analyzer</strong></p>
+        <p class="zh"><strong>分析者</strong></p>
+      </div>
+      <p class="en">Change + Distance</p>
+      <p class="zh">变革 + 距离</p>
+    </div>
+    <div class="style-card">
+      <div class="style-icon">⚖️🛡️</div>
+      <div class="bilingual">
+        <p class="en"><strong>Balancer</strong></p>
+        <p class="zh"><strong>平衡者</strong></p>
+      </div>
+      <p class="en">Stability + Distance</p>
+      <p class="zh">稳定 + 距离</p>
+    </div>
+  </div>
+</section>
+
+<!-- Slide 5: Balance -->
+<section>
+  <h2>Dynamic Balance / 动态平衡</h2>
+  <div class="bilingual">
+    <p class="en">Healthy leadership = balancing all four orientations</p>
+    <p class="zh">健康的领导力 = 四种取向的动态平衡</p>
+  </div>
+  <p style="font-size:3rem; margin-top:20px;">⚖️ ↔ ⚡ ↔ ❤️ ↔ 🏝️</p>
+</section>
+
+<!-- Slide 6: Application -->
+<section>
+  <h2>Applications / 应用场景</h2>
+  <div class="bilingual" style="margin-top:20px;">
+    <p class="en">• Team Composition &nbsp; • Conflict Resolution &nbsp; • Personal Growth</p>
+    <p class="zh">• 团队组建 &nbsp; • 冲突解决 &nbsp; • 个人成长</p>
+  </div>
+</section>
+
+<!-- Slide 7: Reflection -->
+<section>
+  <h2>Reflection / 反思</h2>
+  <div class="bilingual" style="margin-top:20px; text-align: left; max-width: 500px;">
+    <p class="en">• Which orientation do you prefer?<br>• Which do you avoid?<br>• How can you develop the missing one?</p>
+    <p class="zh">• 你偏好哪种取向？<br>• 你回避哪种？<br>• 如何发展你缺失的维度？</p>
+  </div>
+</section>
+
+<!-- Slide 8: Thank You -->
+<section>
+  <div class="bilingual">
+    <p class="en" style="font-size:1.8rem;">Thank You!</p>
+    <p class="zh" style="font-size:1.8rem;">谢谢！</p>
+  </div>
+  <div class="bilingual" style="margin-top:30px; color:#555;">
+    <p class="en">“Great leaders embrace tension, not avoid it.”</p>
+    <p class="zh">“卓越的领导者拥抱张力，而非回避它。”</p>
+  </div>
+</section>
+
+<footer>
+  <p>Created for Leadership Training | 2025</p>
+</footer>
+
+</body>
+</html>
